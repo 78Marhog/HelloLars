@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloLars!</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #0a0a0a;
+            color: white;
+            overflow-x: hidden;
+        }
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(40%);
+        }
+        .hero-content {
+            z-index: 2;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-top: 10px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #00f2fe;
+            color: black;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .cta-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 242, 254, 0.5);
+        }
+        footer {
+            text-align: center;
+            background: #111;
+            color: white;
+            padding: 15px 0;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+        iframe {
+            margin-top: 20px;
+            width: 80%;
+            height: 60vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello Lars!</h1>
+        <p>Welcome to your personal webpage!</p>
+        <iframe src="https://cdn.wordart.com/iframe/xelktooz2v2z"></iframe>
+    </div>
+</body>
+</html>
